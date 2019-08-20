@@ -26,6 +26,7 @@ Você pode estar:
 - git checkout -b (nome da Branch)
 **- o nome da branch por padrão vamos colocar f_01 (para task front 01) e b_01(para task back 01)**
 - assim,foi criado uma nova ramificação (branch), porém verifique se você está na branch correta(que acabou de ser criada) com git branch:
+<br>
 ![branch](img/04.png)
 ### Após o processo, é possível trabalhar na TASK
 
