@@ -8,3 +8,5 @@
 
 - NodeJs(back-end)
 - Banco de Dados (Mysql)
+
+## [Equipe](infos/Equipe.md)
