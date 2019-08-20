@@ -1,9 +1,12 @@
-# 1. Inicio
+
 
 Você pode estar:
+- [TRABALHANDO COM GIT](#2-GIT)
 - Fazendo uma [Nova Task](#11-Task)
 - [Revisando Task](#11-Task) a TASK 
 
+
+# 2. GIT
 ## 1.1 Task
 
 ### 1. Inicialmente você deverá com sua conta logada, fazer um FORK neste projeto principal, com isso você estará copiando para seu repositório.
