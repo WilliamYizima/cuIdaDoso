@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,14 @@
   "homepage": "https://github.com/WilliamYizima/cuIdaDoso#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "ejs": "^2.6.2",
     "express": "^4.17.1",
+    "express-session": "1.15.6",
     "method-override": "^3.0.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "passport": "0.4.0",
+    "passport-local": "1.0.0",
+    "uuid": "3.3.2"
   }
 }

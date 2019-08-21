@@ -17,6 +17,14 @@ app.use(methodOverride(function (req, res) {
       return method;
     }
 }));
+
+//Necessário finalizar o BD
+// const sessaoAutenticacao = require('./autenticacao');
+// sessaoAutenticacao(app);
+
+app.set('view engine', 'ejs');
+app.set('views','./src/app/views');
+
 const rotas = require('../app/routes/routes');
 rotas(app);
 module.exports = app;
