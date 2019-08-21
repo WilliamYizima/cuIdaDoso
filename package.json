@@ -19,6 +19,7 @@
   "homepage": "https://github.com/WilliamYizima/cuIdaDoso#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "method-override": "^3.0.0",
     "nodemon": "^1.19.1"
