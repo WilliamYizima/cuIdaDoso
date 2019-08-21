@@ -10,3 +10,5 @@
 - Banco de Dados (Mysql)
 
 ## [Equipe](infos/Equipe.md)
+
+## [Passo-a-Passo](infos/Passo-a-Passo.md)
