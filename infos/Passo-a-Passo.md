@@ -1,10 +1,11 @@
 
-
-Você pode estar:
+ÍNDICE:
 - [FLUXO BÁSICO](#1-INICIO)
 - [TRABALHANDO COM GIT](#2-GIT)
 - Fazendo uma [Nova Task](#11-Task)
 - [Revisando Task](#11-Task) a TASK 
+- [Pull Request](#3-Pull) a TASK 
+
 
 # 1. INICIO
 ### 1.1 Cartão
@@ -50,8 +51,22 @@ Você pode estar:
 - git commit -m"Comentário sobre a modificação"
 - **Repita o processo até que todos os arquivos sejam 'pré upados'** 
 - Após upar todos os arquivos, veja com git status quais arquivos irão subir
-- Para subir de fato, utilize o git push
+- Para subir de fato, utilize o git push origin (nome da branch utilizada)
 
 
 # 3. Pull
-## Fazendo Pull Request
+## 1.1 Fazendo Pull Request
+- Vá no repositório originário e busque a opção Pull request:
+![pull request](img/2.png)
+
+## 1.2 
+- Vá no repositório originário e busque a opção Pull request:
+![pull request](img/2.png)
+
+- Escolha a branch que foi alterada:
+![pull request](img/4.png)
+
+- Escreva o comentário e observações pertinentes e clique no botão 'create new pull request'
+![pull request](img/5.png)
+
+
