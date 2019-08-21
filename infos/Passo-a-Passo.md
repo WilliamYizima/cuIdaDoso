@@ -56,17 +56,16 @@
 
 # 3. Pull
 ## 1.1 Fazendo Pull Request
-- Vá no repositório originário e busque a opção Pull request:
+#### - Vá no repositório originário e busque a opção Pull request:
 ![pull request](img/2.png)
 
-## 1.2 
-- Vá no repositório originário e busque a opção Pull request:
+#### - Vá no repositório originário e busque a opção Pull request:
 ![pull request](img/2.png)
 
-- Escolha a branch que foi alterada:
+#### - Escolha a branch que foi alterada:
 ![pull request](img/4.png)
 
-- Escreva o comentário e observações pertinentes e clique no botão 'create new pull request'
+#### - Escreva o comentário e observações pertinentes e clique no botão 'create new pull request'
 ![pull request](img/5.png)
 
 
