@@ -8,5 +8,5 @@ const db = require('./database');
 
 module.exports = (app) => {
     //Código para verificar meu BD e o usuário
-
+//a
 }
