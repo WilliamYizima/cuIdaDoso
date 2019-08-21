@@ -12,6 +12,8 @@ Você pode estar:
 - 'Passo resumidos' do que fazer
 - Objetivos(entregáveis) para continuar o projeto
 
+![dando fork no projeto](img/1.png)
+
 ### 1.2 Após o cumprimento da Task, avisar a equipe de testes para verificar (Back end ou Front end)
 
 ### 1.3 Após a validação de 1 pessoa dos testes, fazer o [Pull Request](#3-Pull) a TASK 
