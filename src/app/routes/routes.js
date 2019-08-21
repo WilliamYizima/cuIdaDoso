@@ -7,4 +7,8 @@ module.exports = (app)=>{
     app.get('/login',(req,resp)=>{
         resp.render('../views/login.ejs')
     })
+
+    app.post('/login',(req,resp)=>{
+        
+    })
 }

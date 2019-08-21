@@ -18,6 +18,10 @@ app.use(methodOverride(function (req, res) {
     }
 }));
 
+//Necessário finalizar o BD
+// const sessaoAutenticacao = require('./autenticacao');
+// sessaoAutenticacao(app);
+
 app.set('view engine', 'ejs');
 app.set('views','./src/app/views');
 
