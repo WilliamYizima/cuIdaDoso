@@ -1,10 +1,20 @@
 
 
 Você pode estar:
+- [FLUXO BÁSICO](#1-INICIO)
 - [TRABALHANDO COM GIT](#2-GIT)
 - Fazendo uma [Nova Task](#11-Task)
 - [Revisando Task](#11-Task) a TASK 
 
+# 1. INICIO
+## 1.1 Cartão
+- Deve ter a descrição 
+- 'Passo resumidos' do que fazer
+- Objetivos(entregáveis) para continuar o projeto
+
+## 1.2 Após o cumprimento da Task, avisar a equipe de testes para verificar (Back end ou Front end)
+
+## 1.3 Após a validação de 1 pessoa dos testes, fazer o (#3-Pull) a TASK 
 
 # 2. GIT
 ## 1.1 Task
@@ -39,3 +49,7 @@ Você pode estar:
 - **Repita o processo até que todos os arquivos sejam 'pré upados'** 
 - Após upar todos os arquivos, veja com git status quais arquivos irão subir
 - Para subir de fato, utilize o git push
+
+
+# 3. Pull
+## Fazendo Pull Request
