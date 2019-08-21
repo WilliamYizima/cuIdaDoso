@@ -2,9 +2,8 @@
 ÍNDICE:
 - [FLUXO BÁSICO](#1-INICIO)
 - [TRABALHANDO COM GIT](#2-GIT)
-- Fazendo uma [Nova Task](#11-Task)
+- Fazendo uma [Nova Task](#11-Task) e  fazendo [Pull Request](#3-Pull)
 - [Revisando Task](#11-Task) a TASK 
-- [Pull Request](#3-Pull) a TASK 
 
 
 # 1. INICIO
@@ -67,5 +66,8 @@
 
 #### - Escreva o comentário e observações pertinentes e clique no botão 'create new pull request'
 ![pull request](img/5.png)
+
+#### - Portanto o PullRequest ficará agurdando a aprovação
+![pull request](img/6.png)
 
 
