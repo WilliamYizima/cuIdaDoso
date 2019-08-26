@@ -24,6 +24,10 @@ app.listen(port);
 console.log('API funcionando!');
 
  //Rota usuarios e Pesquisa um usuário
+//  router.get('/', (req, res) =>{
+//     res.send("olá")
+// })
+
  router.get('/cadastro/usuarios/:id?', (req, res) =>{
     let filter = '';
 	if(req.params.id) filter = ' WHERE ID=' + parseInt(req.params.id);	
