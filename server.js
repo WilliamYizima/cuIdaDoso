@@ -1,9 +1,14 @@
+
 // const express = require('express');
 const app = require('./src/config/custom-express');	
 // const app = express();         
 // const bodyParser = require('body-parser');
 const port = 3000; //Porta padrão
 const mysql = require('mysql');
+
+const app = require('./src/config/custom-express');
+
+
 
 //Configurando o body parser para pegar POSTS futuramente
 app.use(bodyParser.urlencoded({ extended: true }));

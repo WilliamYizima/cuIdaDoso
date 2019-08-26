@@ -1,0 +1,92 @@
+*{
+margin:0;
+padding:0;
+    }
+
+.links{
+ width:100%;
+ height:50px;
+position:fixed;
+display:flex;
+    }
+
+.links label{
+padding:10px 0;
+flex-grow:1;
+cursor:pointer;
+transition::all .4s;
+text-align:center;
+font-family:'Lobster',cursive; src:url("_fontes/Lobster-Regular.ttf");
+font-size:100%;
+color:#fff;
+
+      }
+
+.links label:hover{ /*menus ficam acessíveis*/
+background-color: rgba(255,255,255,.2);
+      }
+
+.scroll input{ /*radio button some*/
+ display:none;
+       }
+
+.bloco{ /* barar de rolagem scroll*/
+ width:100vw;
+ height:100vh;
+ justify-content:center;
+ align-items:center;
+ display:flex;
+        }
+
+.bloco img{ /*tamanho da img*/
+width:40%;
+
+       }
+#nodejs{ /*faz parte do bloco*/
+  background-color: #7fbd42;
+      }
+
+
+#bootstrap{
+background-color:#69f;
+     }
+
+#sass{
+background-color:#faa;
+}
+
+#ruby{
+background-color:#aaa; 
+}
+
+#angular{
+background-color:#414950;
+}
+
+.scroll{
+display:flex;
+width:100vw;
+height:100vh;
+/*overflow:hidden;*/
+}
+
+.sections{
+ transition:all .4s;
+}
+body {
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+#rd_bootstrap:checked ~ .sections{
+ margin-top:-100vh;
+}
+#rd_sass:checked ~ .sections{
+ margin-top:-200vh;
+}
+#rd_ruby:checked ~ .sections{
+ margin-top:-300vh;
+}
+#rd_angular:checked ~ .sections{
+ 
+}

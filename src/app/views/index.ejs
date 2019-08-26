@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cuidadoso</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="Imagens/logo-vertical.png" rel="icon">
+  <link href="Imagens/logo-vertical.png" rel="apple-touch-icon">
+    
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.8.8.min.css?ver=4.8.8' type='text/css' media='all' />
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto"></a></h1>
+          
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="#intro"><img src="Imagens/logo-vertical.png" alt="" title="" style="width: 90px"></a>
+      </div>
+
+      <nav id="nav-menu-container links">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro"><strong>Inicio</strong></a></li>
+          <li><a href="#about"><strong>Contratar</strong></a></li>
+          <li><a href="#features"><strong>Prestadores</strong></a></li>
+          <li><a href="#pricing"><strong>Planos</strong></a></li>
+          <li><a href="#team"><strong>Sobre Nós</strong></a></li>
+          <li><a href="#contact"><strong>Guia</strong></a></li>
+          <div><img id="usuarioIcon" src="img/iconUser.jpg" alt="">
+          <spam id="usuario"><a href="" class="btn-get-started scrollto" data-toggle="modal" data-target="#modalLRForm"><strong>Não logado</strong></a></spam>
+            </div>
+        </ul>
+          
+      </nav>
+   
+        <!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+<section class="sections">
+  <!--==========================
+    Inicio
+  ============================-->
+  <section id="intro">
+
+    <div class="intro-text">
+      <p><img src="Imagens/logo-vertical.png" alt="" title="" style="width: 500px"></p>
+      <strong><p class="introducao-subtitulo">Uma plataforma online que dá praticidade para a contratação de um profissional
+especializado no cuidado do idoso.</p></strong>
+        <a href="" class="btn-get-started scrollto" data-toggle="modal" data-target="#modalLRForm"><strong>Login</strong></a>
+        <a href="" class="btn-get-started scrollto" data-toggle="modal" data-target="#modalLRForm"> <strong> Registrar-se</strong></a>
+    </div>
+  </section>
+
+  <main id="main">
+      
+      
+   <!--==========================
+    Modal Login/Registro
+  ============================-->   
+      <!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+              Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+              Cadastre-se</a>
+          </li>
+        </ul>
+
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body mb-1">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate"  placeholder="E-mail">
+                <label data-error="wrong" data-success="right" for="modalLRInput10"></label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Senha">
+                <label data-error="wrong" data-success="right" for="modalLRInput11"></label>
+              </div>
+              <div class="text-center mt-2">
+                <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-center text-md-right mt-1">
+                <p>Não é cadastrado? <a href="#" class="blue-text">Cadastre-se</a></p>
+                <p>Esqueceu sua <a href="#" class="blue-text">senha?</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Fechar</button>
+            </div>
+
+          </div>
+          <!--/.Panel 7-->
+
+          <!--Panel 8-->
+          <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate"  placeholder="E-mail">
+                <label data-error="wrong" data-success="right" for="modalLRInput12"></label>
+              </div>
+
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" placeholder="Senha">
+                <label data-error="wrong" data-success="right" for="modalLRInput13"></label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate" placeholder="Confirme sua senha">
+                <label data-error="wrong" data-success="right" for="modalLRInput14"></label>
+              </div>
+
+              <div class="text-center form-sm mt-2">
+                <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                <p class="pt-1">Já tem uma conta? <a href="#" class="blue-text">Faça Login</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+          <!--/.Panel 8-->
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form--> 
+      
+    <!--==========================
+      Contratar
+    ============================-->
+    <section id="about" class="section-bg" style="padding: 50px">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">Contrate um de nossos prestadores</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br>
+            sunt in culpa qui officia deserunt mollit anim id est laborum
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 about-img wow fadeInLeft">
+            <img src="img/Foto01.jpeg" alt="">
+          </div>
+
+          <div class="col-lg-6 content wow fadeInRight">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elite storium paralate</h2>
+            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+            <a href="#about" class="btn-get-started scrollto">Busque seu Cuidador</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Nossos Prestadores
+    ============================-->
+    <section id="features">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8 offset-lg-4">
+            <div class="section-header wow fadeIn" data-wow-duration="1s">
+              <h3 class="section-title">Nossos Prestadores</h3>
+              <span class="section-divider"></span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-5 features-img">
+            <img src="Imagens/idoso.jpg" alt="" class="wow fadeInLeft">
+          </div>
+
+          <div class="col-lg-8 col-md-7 ">
+
+            <div class="row">
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" style="padding-bottom: 100px;">
+                <div class="icon"><img src="Imagens/cuidador.png" style="width:90px"></div>
+                <h4 class="title"><a href="">Cuidador</a></h4>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+      
+    <!--==========================
+      Planos
+    ============================-->
+      
+      <section id="pricing" class="section-bg">
+          <div class="container">
+              <div class="section-header">
+          <h3 class="section-title">Valores</h3>
+          <span class="section-divider"></span>
+          <p style="color: black"class="section-description">Nossos Planos são sob medida para sua necessidade</p>
+                   
+        </div>
+        <div class="row">
+       <div class="col-md-3">
+            <div class="box wow fadeInLeft">
+              <h3>Free</h3>
+              <h4><sup>R$</sup>0<span> </span></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i>50 User Accounts</li>
+                <li><i class="ion-android-checkmark-circle"></i>50 Private Projects</li>
+                <li><i class="ion-android-checkmark-circle"></i>Umlimited Projects</li>
+                <li><i class="ion-android-checkmark-circle"></i>Unlimited space</li>
+              </ul>
+              <a href="#" class="get-started-btn">Get Started</a>
+            </div>
+          </div>
+       <div class="col-md-3">
+            <div class="box wow fadeInLeft">
+              <h3>Básico</h3>
+              <h4><sup>R$</sup>0<span> </span></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i>50 User Accounts</li>
+                <li><i class="ion-android-checkmark-circle"></i>50 Private Projects</li>
+                <li><i class="ion-android-checkmark-circle"></i>Umlimited Projects</li>
+                <li><i class="ion-android-checkmark-circle"></i>Unlimited space</li>
+              </ul>
+              <a href="#" class="get-started-btn">Get Started</a>
+            </div>
+          </div>
+        <div class="col-md-3">
+            <div class="box wow fadeInRight">
+              <h3>Intermediário</h3>
+              <h4><sup>R$</sup>0<span> </span></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i>50 User Accounts</li>
+                <li><i class="ion-android-checkmark-circle"></i>50 Private Projects</li>
+                <li><i class="ion-android-checkmark-circle"></i>Umlimited Projects</li>
+                <li><i class="ion-android-checkmark-circle"></i>Unlimited space</li>
+              </ul>
+              <a href="#" class="get-started-btn">Get Started</a>
+            </div>
+          </div>
+        <div class="col-md-3">
+            <div class="box wow fadeInRight">
+              <h3>Premium</h3>
+              <h4><sup>R$</sup>0<span> </span></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i>50 User Accounts</li>
+                <li><i class="ion-android-checkmark-circle"></i>50 Private Projects</li>
+                <li><i class="ion-android-checkmark-circle"></i>Umlimited Projects</li>
+                <li><i class="ion-android-checkmark-circle"></i>Unlimited space</li>
+              </ul>
+              <a href="#" class="get-started-btn">Get Started</a>
+            </div>
+          </div>
+      </div>
+              <div class="row" style="padding-bottom: 200px"></div>
+              </div>
+          </section>-->
+    <!--==========================
+      SOBRE NÓS
+    ============================-->
+    <section id="team" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">SOBRE NÓS</h3>
+          <span class="section-divider"></span>
+          <p class="section-description"> Unimos cuidadores e a melhor idade através de uma plataforma única [...].</p>
+        </div>
+          <div class="member">
+            </div>
+        </div>
+    </section>
+    <!--==========================
+      Guia
+    ============================-->
+    <section id="contact">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8 offset-lg-4">
+            <div class="section-header wow fadeIn" data-wow-duration="1s">
+              <h3 class="section-title">Sobre o site</h3>
+              <span class="section-divider"></span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-5 features-img">
+            <img src="img/product-features.png" alt="" class="wow fadeInLeft">
+          </div>
+
+          <div class="col-lg-8 col-md-7 ">
+
+            <div class="row">
+
+              <div class="col-lg-6 col-md-6 box wow fadeInRight">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+                <h4 class="title"><a href="">Fácil de usar</a></h4>
+                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident clarida perendo.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
+                <div class="icon"><i class="ion-ios-flask-outline"></i></div>
+                <h4 class="title"><a href="">Seguro</a></h4>
+                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata noble dynala mark.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s">
+                <div class="icon"><i class="ion-social-buffer-outline"></i></div>
+                <h4 class="title"><a href="">Rápido</a></h4>
+                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur teleca starter sinode park ledo.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
+                <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+                <h4 class="title"><a href="">Econômico</a></h4>
+                <p class="description">Excepteur sint occaecat cupidatat non proidule.</p>
+              </div>
+                <a href="preco.html" class="btn-get-started scrollto">Cadastre-se</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+</section>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
