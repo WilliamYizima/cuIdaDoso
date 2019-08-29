@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 var passport = require('passport');
 const { Client } = require('pg');
+const PostgreSQLStrategy = require('../app/dao/strategies/postgreeStrategy')
 
 if(process.env.NODE_ENV == 'production'){
 
@@ -26,24 +27,12 @@ if(process.env.NODE_ENV == 'production'){
 })
 
 }else{
-
-  const client = new Client({
-    user: 'cuidadoso',
-    host: 'localhost',
-    database: 'cuidadoso',
-    password: '123456',
-    port: 5432,
+  const postgree = new PostgreSQLStrategy();
+  postgree.isConnected();
+  postgree.teste().then(usuario=>{
+    console.log(`usuários:`,JSON.stringify(usuario,null,4))
   })
-  client.connect();
 
-  client.query('select * from usuario', (err, res) => {
-    if (err) {
-      console.log(err.stack)
-    } else {
-      console.log("meu teste no BD, deve retornar Will - 123")
-      console.log(res.rows[0])
-    }
-  })
   console.log("Conectado em dev")
 }
 

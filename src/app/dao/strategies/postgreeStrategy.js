@@ -6,44 +6,44 @@ class PostgreSQLConnection {
 class PostgreSQLStrategy extends IDb {
   constructor() {
     super();
-    this._herois = null;
+    this._usuarios = null;
     this._sequelize = null;
     this._connect();
   }
 
   defineModel() {
-    this._herois = this._sequelize.define(
-      'herois',
+    this._usuarios = this._sequelize.define(
+      'usuario',
       {
-        id: {
+        id_usuario: {
           type: Sequelize.INTEGER,
           required: true,
           primaryKey: true,
           autoIncrement: true,
         },
-        nome: {
+        email: {
           type: Sequelize.STRING,
           required: true,
         },
-        poder: {
+        senha: {
           type: Sequelize.STRING,
           required: true,
         },
       },
       {
         //opcoes para base existente
-        tableName: 'TB_HEROIS',
+        tableName: 'usuario',
         freezeTableName: false,
-        timestamps: false,
+        timestamps: false
       },
     );
   }
 
   _connect() {
     this._sequelize = new Sequelize(
-      'herois', //database
-      'erickwendel', // user
-      'minhasenhasecreta', //senha
+      'cuidadoso', //database
+      'cuidadoso', // user
+      '123456', //senha
       {
         host: 'localhost',
         dialect: 'postgres',
@@ -60,10 +60,13 @@ class PostgreSQLStrategy extends IDb {
     this.defineModel();
   }
 
+
+
   async isConnected() {
     try {
       // await this._connect();
       await this._sequelize.authenticate();
+      console.log('Entrei no DB cuidadoso')
       return true;
     } catch (error) {
       console.error('fail!', error);
@@ -71,21 +74,29 @@ class PostgreSQLStrategy extends IDb {
     }
   }
 
+
+  teste(){
+    return this._usuarios.findAll({where:{ id_usuario: 1}
+    })
+  }
+  
+
   create(item) {
-    return this._herois.create(item, { raw: true });
+    return this._usuarios.create(item, { raw: true });
   }
 
   read(item) {
-    return this._herois.findAll({ where: item, raw: true });
+    return this._usuarios.findAll({ where: item, raw: true });
   }
 
   update(id, item) {
-    return this._herois.update(item, { where: { id } });
+    return this._usuarios.update(item, { where: { id } });
   }
   delete(id) {
     const query = id ? { id } : {};
-    return this._herois.destroy({ where: query });
+    return this._usuarios.destroy({ where: query });
   }
+
 }
 
 module.exports = PostgreSQLStrategy;
