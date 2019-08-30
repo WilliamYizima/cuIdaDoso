@@ -20,11 +20,16 @@ module.exports = (app)=>{
     app.post('/login',(req,resp,next)=>{
 
         // const passport = req.passport;
-       
+        
+        //     passport.authenticate('local',{
+        //         successRedirect:'/',
+        //         failureRedirect:'/usuarios/login',
+        //         failureFlash:true
+        //     })(req,res,next)
+        // })
         req.passport.authenticate('local',(erro,usuario,info)=>{
-
+                
                 if(info){
-                    console.log('deu erro')
                     return resp.render('index');
                 }
                 if(erro){

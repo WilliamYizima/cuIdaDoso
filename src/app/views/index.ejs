@@ -111,22 +111,24 @@ especializado no cuidado do idoso.</p></strong>
           <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
             <!--Body-->
+            <form action="/login" method="post">
             <div class="modal-body mb-1">
               <div class="md-form form-sm mb-5">
                 <i class="fas fa-envelope prefix"></i>
-                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate"  placeholder="E-mail">
+                <input type="email" name="email" id="modalLRInput10" class="form-control form-control-sm validate"  placeholder="E-mail">
                 <label data-error="wrong" data-success="right" for="modalLRInput10"></label>
               </div>
 
               <div class="md-form form-sm mb-4">
                 <i class="fas fa-lock prefix"></i>
-                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Senha">
+                <input type="password" name="senha" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Senha">
                 <label data-error="wrong" data-success="right" for="modalLRInput11"></label>
               </div>
               <div class="text-center mt-2">
-                <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                <button type="submit" class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
               </div>
             </div>
+            </form>
             <!--Footer-->
             <div class="modal-footer">
               <div class="options text-center text-md-right mt-1">

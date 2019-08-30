@@ -74,10 +74,9 @@ class PostgreSQLStrategy extends IDb {
     }
   }
 
-
-  teste(){
-    return this._usuarios.findAll({where:{ id_usuario: 1}
-    })
+// Teste para login
+  login(item){
+    return this._usuarios.findOne({ where: {email:item}, raw: true });
   }
   
 
@@ -85,8 +84,8 @@ class PostgreSQLStrategy extends IDb {
     return this._usuarios.create(item, { raw: true });
   }
 
-  read(item) {
-    return this._usuarios.findAll({ where: item, raw: true });
+  async read(item) {
+    return this._usuarios.findAll({ where: {email:item}, raw: true });
   }
 
   update(id, item) {

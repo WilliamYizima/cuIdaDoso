@@ -19,7 +19,7 @@ if(process.env.NODE_ENV == 'production'){
     if (err) {
       console.log(err.stack)
     } else {
-      console.log("meu teste no BD, deve retornar Will - 123")
+      console.log("meu teste no BD, deve retornar Cuidadoso - 123")
       console.log(res.rows[0])
     }
   })
@@ -29,10 +29,9 @@ if(process.env.NODE_ENV == 'production'){
 }else{
   const postgree = new PostgreSQLStrategy();
   postgree.isConnected();
-  postgree.teste().then(usuario=>{
-    console.log(`usuários:`,JSON.stringify(usuario,null,4))
+  postgree.login('cuidadoso').then(usuario=>{
+    console.log(`Teste básico do BD DEV:`,JSON.stringify(usuario,null,4))
   })
-
   console.log("Conectado em dev")
 }
 
@@ -65,8 +64,8 @@ app.use(methodOverride(function (req, res) {
 }));
 
 //Necessário finalizar o BD
-// const sessaoAutenticacao = require('./autenticacao');
-// sessaoAutenticacao(app);
+const sessaoAutenticacao = require('./autenticacao');
+sessaoAutenticacao(app);
 
 app.set('view engine', 'ejs');
 app.set('views','./src/app/views');
