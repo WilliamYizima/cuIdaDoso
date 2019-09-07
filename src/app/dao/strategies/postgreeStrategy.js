@@ -136,7 +136,7 @@ class PostgreSQLStrategy extends IDb {
 
 // Teste para login
   login(item){
-    return this._usuarios.findOne({ where: {nome:item}, raw: true });
+    return this._usuarios.findOne({ where: {email:item}, raw: true });
   }
   
 

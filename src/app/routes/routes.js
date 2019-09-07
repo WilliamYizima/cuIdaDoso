@@ -12,9 +12,7 @@ module.exports = (app)=>{
         resp.render('login')
     })
 
-    app.get('/logado',(req,resp)=>{
-        resp.render('logado')
-    })
+    
 
     app.get('/cadastro',(req,resp)=>{
         resp.render('cadastro')
@@ -34,7 +32,9 @@ module.exports = (app)=>{
         req.passport.authenticate('local',(erro,usuario,info)=>{
                 
                 if(info){
+                    console.log("Deu erro index")
                     return resp.render('index');
+                    
                 }
                 if(erro){
                     console.log('deu erro')

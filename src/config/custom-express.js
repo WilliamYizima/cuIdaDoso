@@ -29,7 +29,7 @@ if(process.env.NODE_ENV == 'production'){
 }else{
   const postgree = new PostgreSQLStrategy();
   postgree.isConnected();
-  postgree.login('Neymar Jr').then(usuario=>{
+  postgree.login('william.yizima@hotmail.com').then(usuario=>{
     console.log(`Teste básico do BD DEV:`,JSON.stringify(usuario,null,4))
   })
   console.log("Conectado em dev")
