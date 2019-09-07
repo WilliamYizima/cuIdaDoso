@@ -13,26 +13,86 @@ class PostgreSQLStrategy extends IDb {
 
   defineModel() {
     this._usuarios = this._sequelize.define(
-      'usuario',
+      'Usuarios',
       {
-        id_usuario: {
+        rg: {
+          type: Sequelize.STRING,
+          required: true,
+        },
+        nome: {
+          type: Sequelize.STRING,
+          required: true,
+        },
+        login: {
+          type: Sequelize.STRING,
+          required: true,
+        },
+        Endereco: {
+          type: Sequelize.STRING,
+          // required: true,
+        },
+        Num_Endereco: {
+          type: Sequelize.STRING,
+          // required: true,
+        },
+        Bairro: {
+          type: Sequelize.STRING,
+          // required: true,
+        },
+        Cidade: {
+          type: Sequelize.STRING,
+          // required: true,
+        },
+        Estado: {
+          type: Sequelize.STRING,
+          // required: true,
+        },
+        Cep: {
+          type: Sequelize.STRING,
+          // required: true,
+        },
+        Bloqueado: {
+          type: Sequelize.BOOLEAN,
+          required: true,
+        },
+        Email: {
+          type: Sequelize.STRING,
+          required: true,
+        },
+        Telefone: {
+          type: Sequelize.STRING,
+          // required: true,
+        },
+        Dt_Nascimento: {
+          type: Sequelize.DATE,
+          // required: true,
+        },
+        Nome_Necessidades: {
+          type: Sequelize.STRING,
+          // required: true,
+        },
+        Descricao_Necessidades: {
+          type: Sequelize.STRING,
+          // required: true,
+        },
+        id_plano: {
           type: Sequelize.INTEGER,
+          // required: true,
+        },
+        Cpf: {
+          type: Sequelize.STRING,
           required: true,
           primaryKey: true,
-          autoIncrement: true,
         },
-        email: {
+        Senha: {
           type: Sequelize.STRING,
           required: true,
-        },
-        senha: {
-          type: Sequelize.STRING,
-          required: true,
-        },
+        }
+
       },
       {
         //opcoes para base existente
-        tableName: 'usuario',
+        tableName: 'Usuarios',
         freezeTableName: false,
         timestamps: false
       },
@@ -76,7 +136,7 @@ class PostgreSQLStrategy extends IDb {
 
 // Teste para login
   login(item){
-    return this._usuarios.findOne({ where: {email:item}, raw: true });
+    return this._usuarios.findOne({ where: {nome:item}, raw: true });
   }
   
 
