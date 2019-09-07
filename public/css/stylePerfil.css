@@ -17,7 +17,115 @@ overflow-y: ;
 *{
 margin:0;
 padding:0;
-    }
+}
+
+/*--------------------------------------------------------------
+# Menu slide
+--------------------------------------------------------------*/
+
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.barra{
+    background-color: #1dc8cd;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -200px;
+}
+
+navs{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+navs a{
+    text-decoration: none;
+}
+
+.linkNav{
+    background-color: aquamarine;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 13pt;
+    transition: all .2s linear;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.linkNav:hover{
+    background-color: azure;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(300px);
+}
+
+/*------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Barra busca
+--------------------------------------------------------------*/
+
+#pesquisa{
+    
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    color: white;
+    position: absolute;
+    top: 30%;
+    margin-top: -25px; 
+    border-radius: 20px solid aliceblue;
+}
+
+.dados{
+     border-radius: 20px;
+     border: 0;
+     outline: 0;
+     background: transparent;
+     background-color: aliceblue;
+    padding: 5px
+}
+
+#btnPesquisa{
+    border-radius: 20px;
+    background-color: #1dc9ce;
+    color: white; 
+    width: 190px;  
+    height: 60px; 
+    cursor: pointer;
+    padding: 5px
+}
+
+
+/*-----------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Cartões
+--------------------------------------------------------------*/
+#cartoes{
+    text-align:center;
+    position: absolute;
+    top: 45 %;
+    left: 20%;
+    margin-top: -25px; 
+}
+
+/*-----------------------------------------------------------*/
 
 .links{
  width:100%;
@@ -87,7 +195,7 @@ height:100vh;
 }
 
 .sections{
- transition:all .4s;
+    transition:all .4s;
 }
 
 #paginaCont:checked ~ .sections{
@@ -656,31 +764,31 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #eff5f5;
 }
 
-/* contratar
+/* About Us Section
 --------------------------------*/
 
-#contratar {
+#about {
   padding: 20px 0;
   overflow: hidden;
 }
 
-#contratar .about-img {
+#about .about-img {
   height: 510px;
   overflow: hidden;
 }
 
-#contratar .about-img img {
+#about .about-img img {
   margin-left: -15px;
   max-width: 90%;
 }
 
-#contratar .content .h2 {
+#about .content .h2 {
   color: #333;
   font-weight: 300;
   font-size: 24px;
 }
 
-#contratar .content h3 {
+#about .content h3 {
   color: #777;
   font-weight: 300;
   font-size: 18px;
@@ -688,30 +796,30 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-style: italic;
 }
 
-#contratar .content p {
+#about .content p {
   line-height: 26px;
 }
 
-#contratar .content p:last-child {
+#about .content p:last-child {
   margin-bottom: 0;
 }
 
-#contratar .content i {
+#about .content i {
   font-size: 20px;
   padding-right: 4px;
   color: #1dc8cd;
 }
 
-#contratar .content ul {
+#about .content ul {
   list-style: none;
   padding: 0;
 }
 
-#contratar .content ul li {
+#about .content ul li {
   padding-bottom: 10px;
 }
 
-#contratar .btn-get-started {
+#about .btn-get-started {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;

@@ -16,6 +16,10 @@ module.exports = (app)=>{
         resp.render('logado')
     })
 
+    app.get('/cadastro',(req,resp)=>{
+        resp.render('cadastro')
+    })
+
     
     app.post('/login',(req,resp,next)=>{
 

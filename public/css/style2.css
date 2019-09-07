@@ -214,7 +214,7 @@ input[type=radio] {
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: 720px; }
 
 figure {
   margin: 0; }
@@ -237,7 +237,7 @@ h2 {
   padding: 0;
   font-weight: 700;
   color: #222;
-  font-family: 'Montserrat';
+font-family: 'Montserrat';
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 32px; }
@@ -253,26 +253,31 @@ body {
   background: #282828;
   padding: 10px ; }
 
+/* aqui modifica o tamanho da pagina e sua largura */
 .container {
-  width: 1400px;
+  width: 1300px;
   position: relative;
   margin: 0 auto;
   background: #fff; }
 
-.signup-img, .signup-form {
-  width: 50%; }
+.signup-img{
+  width: 35%; } 
+
+
+.signup-form {
+  width: 65%; }
 
 .signup-img {
   margin-bottom: -7px; }
 
 .register-form {
-  padding: 50px 100px 50px 70px; }
+  padding: 15px 30px 20px 40px; }
 
 .form-row {
   margin: 0 -15px; }
   .form-row .form-group {
     width: 50%;
-    padding: 0 15px; }
+    padding: 0 10px; }
 
 .form-group {
   margin-bottom: 23px;
@@ -282,11 +287,11 @@ input, select {
   display: block;
   width: 100%;
   border: 1px solid #ebebeb;
-  padding: 11px 20px;
+  padding: 10px 10px;
   box-sizing: border-box;
   font-family: 'Montserrat';
   font-weight: 500;
-  font-size: 13px; }
+  font-size: 14px; }
   input:focus, select:focus {
     border: 1px solid #1dc9ce; }
 
@@ -298,17 +303,26 @@ label {
   display: block; }
 
 .form-radio {
-  margin-bottom: 18px; }
-  .form-radio input {
+  margin-bottom: 18px;
+    margin-top: 20px;
+    margin-right: 50px}
+
+    .form-radio input {
     width: auto;
     display: inline-block; }
 
+/* aqui edita  posicionamento LABEL sexo */
 .radio-label {
-  padding-right: 72px; }
+  margin-top: -18px;
+  padding-right: 35px;
+  padding-left: 30px;}
 
+/* aqui edita espaço entre RADIOS e margin topo */
 .form-radio-item {
   position: relative;
-  margin-right: 45px; }
+  margin-right: 45px; 
+  margin-top: 15px;}
+
   .form-radio-item label {
     font-weight: 500;
     font-size: 13px;
@@ -371,13 +385,16 @@ select {
   position: relative;
   background: 0 0;
   z-index: 10;
-  cursor: pointer; }
+  cursor: pointer; 
+  width: 36%;
+  font-size: 13px;}
 
+/*  ICONE QUE ESTÁ COMO SPAN - ENCIMA DO COMBOACOMPANHANTE */
 .select-icon {
   z-index: 0;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 495px;
   bottom: 0;
   justify-content: center;
   -moz-justify-content: center;
@@ -400,25 +417,27 @@ select {
     -webkit-align-items: center;
     -o-align-items: center;
     -ms-align-items: center;
-    width: 40px;
+    width: 30px;
     height: 20px;
     font-size: 18px;
     color: #999; }
 
 .form-submit {
   text-align: right;
-  padding-top: 27px; }
+  padding-top: 5px; }
 
 .submit {
-  width: 140px;
+  width: 160px;
   height: 40px;
+  margin-right: 40px;
   display: inline-block;
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 13px;
   padding: 10px;
-  border: none;
+  border-radius: 20px;
   cursor: pointer; }
+
 
 #reset {
   background: #f8f8f8;
@@ -448,9 +467,11 @@ select {
 
   .signup-img, .signup-form {
     width: 100%; } }
+
 @media screen and (max-width: 768px) {
   .register-form {
     padding: 50px 40px 50px 40px; } }
+
 @media screen and (max-width: 575px) {
   .form-row {
     flex-direction: column;
@@ -469,6 +490,7 @@ select {
 
   .form-radio-item {
     margin-right: 25px; } }
+
 @media screen and (max-width: 480px) {
   .form-radio {
     flex-direction: column;
@@ -483,5 +505,52 @@ select {
   #reset {
     margin-right: 0px;
     margin-bottom: 10px; } }
+#btnDep{
+    border-radius: 20px;
+    background-color: #1dc9ce;
+    color: white; width: 200px;  
+    height: 40px; 
+    padding: 10px; 
+    cursor: pointer
+}
+
 
 /*# sourceMappingURL=style.css.map */
+
+#areanome{}
+
+#areaemail{}
+
+#areatelefone{}
+
+#areacelular{}
+
+#areasexo{}
+
+#areacep{
+    width: 120px;}
+
+#arearua{
+    width: 550px;}
+
+#areanumero{
+    width: 100px;}
+
+
+#areacomplemento{
+    width: 250px;}
+
+#areabairro{
+    width: 260px;}
+
+#areacidade{
+    width: 160px;}
+
+#areauf{
+    width: 80px;}
+
+#areasenha{
+}
+
+#areaconfsenha{}
+

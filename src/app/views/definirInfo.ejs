@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cuidadoso</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="Imagens/logo-vertical.png" rel="icon">
+    
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+    
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Abril+Fatface'>
+
+  <link rel="stylesheet" href="calendario.css">
+
+      
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto"></a></h1>
+          
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="#intro"><img src="Imagens/logo-vertical.png" alt="" title="" style="width: 90px"></a>
+      </div>
+
+      <nav id="nav-menu-container links">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="geral.html">Inicio</a></li>
+          <li><a href="#about">Contratar</a></li>
+          <li><a href="#features">Prestadores</a></li>
+          <li><a href="#pricing">Planos</a></li>
+          <li><a href="#team">Sobre Nós</a></li>
+          <li><a href="#contact">APP</a></li>
+          <div><img id="usuarioIcon" src="img/iconUser.jpg" alt="">
+            <spam id="usuario">Não Logado</spam>
+            </div>
+        </ul>
+          
+      </nav>
+   
+        <!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+<section class="sections">
+  <div style="padding-top: 80px;padding-left: 50px;  color: #1dc9ce"> </div>
+  <spam id="relatorio"></spam>
+    <spam id="marcado">Dados </spam>
+    <spam id="dadosData"></spam>
+    <spam id="dadosHora"></spam>
+    <spam id="dadosDuracao"></spam>
+    <spam id="dadosDescreve"></spam>
+  
+    <main id="main">
+    <!---Parte do Calendário-->
+      <span id="insere">  
+      <button class="button" > Continuar </button>
+      
+      <div id="fraseEtapa" style="padding-bottom:20px; padding-top:20px;text-align: center; color: #1dc9ce"> Para fazer requisição é necessário primeiro escolher a data<br>Os dias em Vermelho não estão disponíveis</div>
+
+      <div class="datepicker"></div>
+    </span> 
+      <!-- <div style="padding: 110px; color: #1dc9ce">
+          <h5><div class="form-group col-md-6" ><p></p>
+                <label for="inputEmail4">Definir data de serviço:</label>
+                <input type="email" style="width: 200px" class="form-control" id="inputEmail4" placeholder="   /   /   ">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Definir Horário do Serviço:</label>
+                <input type="email" style="width: 200px" style="width: 200px" class="form-control" id="inputEmail4" placeholder="00:00">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Definir a duração do serviço:</label>
+                <input type="email" style="width: 200px" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Descreva as tarefas a serem realizadas:</label>
+                <textarea class="form-control" style="width: 200px" id="exampleFormControlTextarea1" rows="3" placeholder="Ex., Acompanhar em consulta médica, buscar rémdio, comprar pão, trocar uma lâmpada, etc."></textarea>
+            </div></h5>
+          <input type="button" value="Enviar" style="border-radius: 100px; padding: 8px 30px; background-color: #1dc9ce ;color: #fff;">
+      </div>
+      <div class="form-group col-md-6" style="position: fixed ">
+                <label for="inputEmail4">Definir data de serviço:</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="   /   /   ">
+            </div> -->
+
+<!-- -------------------------------------------------------------------
+modal-body
+------------------------------------------------------------------- -->
+
+
+            <div id="modalExemplo"class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Confirmação de Atendimento</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p id="modalResumo"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+  <!-- -------------------------------------------------------------------
+modal-body
+------------------------------------------------------------------- -->
+  </main>
+</section>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='js/calendarioUi.js'></script>
+  <script src="calendario.js"></script>
+  
+
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <!-- <script src="js/main.js"></script> -->
+
+
+  <script>
+  
+//-------------------------------------------------------------------
+//-------AO CARREGAR A PÁGINA
+//-------------------------------------------------------------------
+    
+  window.onload = function() {
+  // códigos JavaScript a serem executados quando a página carregar
+
+  // agendaNaoMarca();//
+  // horaEAtendimento();
+
+}
+
+//-------------------------------------------------------------------
+//-------ESCOLHE A DATA NO CALENDÁRIO
+//-------------------------------------------------------------------
+
+  $('.button').click(function(){
+    escolhaData();
+  });
+
+//-------------------------------------------------------------------
+//-------FUNÇÃO DO CALENDÁRIO
+//-------------------------------------------------------------------
+
+  function escolhaData(){
+    var currentDate = $( ".datepicker" ).datepicker( "getDate" ).toString();
+    var meuArray = currentDate.split(' ');
+
+    var d = new Date();
+    var diaDeHoje = d.getDate();
+
+    var mesNumero = transformaMes(meuArray[1]).toString();
+    var dataFormatada = `${meuArray[3]}-${mesNumero}-${meuArray[2]}`
+    
+    var mensagemValidacao = verificaData(meuArray[2],mesNumero,meuArray[3]);
+    
+
+    if(mensagemValidacao!=''){
+      alert(mensagemValidacao);
+    }else{
+      $("#minhaData").val(dataFormatada);
+      alert('inserido com sucesso!');
+      insereValorData('Data: '+dataFormatada);
+      dataEperiodo();
+    }
+
+  }
+
+  function transformaMes(mesBusca){
+    var data = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+    var a = data.indexOf(mesBusca)+1;
+    var b = a.toString()
+    
+    if(b.length==1){
+      b = '0'+b;
+    }
+    return b;
+}
+
+  function verificaData(dia,mes,ano){
+
+    var data = new Date(),
+        d  = data.getDate(),
+        m  = data.getMonth()+1,
+        a  = data.getFullYear();
+
+
+
+    var mesCerto = parseInt(mes);
+    var f = new Date(ano, mes - 1, dia);
+    var g = new Date(a, m-1 , d);
+
+
+
+    var msg = ''
+
+    if(f<=g){
+      msg = 'Escolha uma data Válida!'
+    }
+
+    return msg; 
+  }
+
+//-------------------------------------------------------------------
+//-------INSERE VALOR NA CONSULTA - DATA
+//-------------------------------------------------------------------
+  function insereValorData(valorInserido) {
+  
+      $('#dadosData').text(valorInserido);
+      
+  };
+
+//-------------------------------------------------------------------
+//-------MUDA A PÁGINA PARA DATA E HORA
+//-------------------------------------------------------------------
+  function dataEperiodo(){
+
+    var horarios = ['10:00','15:00','18:00']
+    var duracao = ['30 min','1 hora','2 horas','6 horas']
+    $( "#insere" ).remove()
+    $("#main").append( `<span id="insere2">
+                          <button id="botao2"class="button" > Continuar </button>
+                            <div id="horarioAtende"style="padding-bottom:20px; padding-top:25px;text-align: center; color: #1dc9ce">
+                              Escolha o Horário
+                            </div>
+                              <button id="minhaHora1"  class="dataEscolhida button" type="button" >${horarios[0]}</button>
+                              <button id="minhaHora2"  class="dataEscolhida button" type="button" >${horarios[1]}</button>
+                              <button id="minhaHora3"  class="dataEscolhida button"  type="button" >${horarios[2]}</button>
+                            <div id="horarioAtende"style="position:absolute;padding-bottom:20px; padding-top:200px;text-align: center; color: #1dc9ce">
+                              Tempo de atendimento
+                            </div>
+                            
+                              <button id="duracao1"  class="dataEscolhida button" type="button" >${duracao[0]}</button>
+                              <button id="duracao2"  class="dataEscolhida button" type="button" >${duracao[1]}</button>
+                              <button id="duracao3"  class="dataEscolhida button"  type="button" >${duracao[2]}</button>
+                        </span>` )
+}
+
+
+
+//-------------------------------------------------------------------
+//-------PEGA DO BOTÃO O HORÁRIO
+//-------------------------------------------------------------------
+function insereHora(horario){
+  $('#dadosHora').text("Horário: "+horario);
+}
+
+$(document).on("click",'#minhaHora2',function(){
+  var horario = $('#minhaHora2').text();
+  insereHora(horario);
+  
+});
+
+$(document).on("click",'#minhaHora1',function(){
+  var horario = $('#minhaHora1').text();
+  insereHora(horario);
+  
+});
+
+$(document).on("click",'#minhaHora3',function(){
+  var horario = $('#minhaHora3').text();
+  insereHora(horario);
+  
+});
+
+//-------------------------------------------------------------------
+//-------PEGA DO BOTÃO A DURAÇÃO
+//-------------------------------------------------------------------
+
+function inserePeriodo(periodo){
+  $('#dadosDuracao').text("Duração: "+periodo);
+}
+
+$(document).on("click",'#duracao1',function(){
+  var horario = $('#duracao1').text();
+  inserePeriodo(horario);
+  
+});
+
+$(document).on("click",'#duracao2',function(){
+  var horario = $('#duracao2').text();
+  inserePeriodo(horario);
+  
+});
+
+$(document).on("click",'#duracao3',function(){
+  var horario = $('#duracao3').text();
+  inserePeriodo(horario);
+  
+});
+
+function verificaDados(){
+  var duracaoInserida = $("#dadosDuracao").text();
+  var datainserida = $("#dadosHora").text();
+  var a = true;
+  
+  if(duracaoInserida=='' || datainserida==''){
+      a = false;//não foi preenchido
+  }
+
+  return a;
+}
+
+//-------------------------------------------------------------------
+//-------MUDA A PÁGINA PARA DESCRIÇÃO
+//-------------------------------------------------------------------
+
+
+$(document).on("click",'#botao2',function(){
+  if(verificaDados() == true){
+    descricao();
+  }else{
+    alert('Por favor, escolha Data e Duração')
+  }
+  
+});
+
+
+function descricao(){
+
+$( "#insere2" ).remove()
+$("#main").append( `<span id="insere3">
+                      <button id="botao3" class="button" data-toggle="modal" data-target="#modalExemplo">Marcar </button>
+                        <div id="horarioAtende"style="padding-bottom:20px; padding-top:25px;text-align: center; color: #1dc9ce">
+                          Escreva uma Breve Descrição das Atividades
+                          
+                        </div>
+                        <textarea id ="descrição" cols="50" rows="4" ></textarea>
+                    </span>` )
+}
+
+$(document).on("click",'#botao3',function(){
+  var dataPega = $("#dadosData").text();
+  var horaPega = $("#dadosHora").text();
+  var duracaoPega = $("#dadosDuracao").text();
+  var descPega = $("#descrição").val();
+  escreveNoModal(dataPega,horaPega,duracaoPega,descPega);
+});
+
+
+
+function escreveNoModal(data,hora,duracao,descricao){
+  $("#modalResumo").html(`
+        <p>FOI MARCADO O SEU ATENDIMENTO</p>
+        <p>Dados:</p>
+        <p> ${data}</p>
+        <p> ${hora}</p>
+        <p> ${duracao}</p>
+        <p>Descrição: ${descricao}</p>
+  `)
+
+}
+
+  </script>
+
+  
+</body>
+</html>
